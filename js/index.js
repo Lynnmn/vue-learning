@@ -19,6 +19,12 @@ var vm_table = new Vue({
 		},
 		addInfo: function(index){
 			this.items.push(this.newInfo)
+			this.newInfo = {
+				name:'',
+				age:'',
+				sex:'',
+				city:''
+			}
 		}
 	}
 })
