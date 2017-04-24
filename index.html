@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vuetest</title>
+</head>
+<body>
+	<div class="main">
+		<div class="table-wrapper">
+			<table cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th>姓名</th>
+						<th>年龄</th>
+						<th>性别</th>
+						<th>城市</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="(item,index) in items">
+						<td>{{item.name}}</td>
+						<td>{{item.age}}</td>
+						<td>{{item.sex}}</td>
+						<td>{{item.city}}</td>
+						<td><div class="btn" v-on:click="deleteInfo(index)">删除</div></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="add-wrapper">
+			<p>添加一个新成员：</p>
+			<label for="name">姓名</label>
+			<input type="text" name="name" id="name" v-model='newInfo.name' />  <br/>
+			<label for="age">年龄</label>
+			<input type="text" name="age" id="age" v-model='newInfo.age' />  <br/>
+			<label for="sex">性别</label>
+			<select v-model="newInfo.sex" id="sex">
+				<option>male</option>
+				<option>female</option>
+			</select>   <br/>
+			<label for="city">城市</label>
+			<input type="text" name="city" id="city" v-model="newInfo.city">  <br/>
+			<div class="addbtn" v-on:click="addInfo">添加</div>  
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./static/bundle.js"></script>
+</body>
+</html>

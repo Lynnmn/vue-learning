@@ -1,0 +1,35 @@
+{
+	"items":[
+		{
+		"name":"Tom",
+		"age": "13",
+		"sex": "male",
+		"city": "上海"
+		},
+		{
+		"name":"Bob",
+		"age": "18",
+		"sex": "male",
+		"city": "兰州"
+		},
+		{
+		"name":"Amy",
+		"age": "19",
+		"sex": "female",
+		"city": "苏州"
+		},
+		{
+		"name":"Allen",
+		"age": "23",
+		"sex": "female",
+		"city": "南京"
+		},
+		{
+		"name":"Lynn",
+		"age": "10",
+		"sex": "female",
+		"city": "扬州"
+		}
+	]
+
+}
